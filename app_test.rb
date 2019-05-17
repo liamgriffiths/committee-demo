@@ -2,7 +2,6 @@ require_relative "app"
 require "minitest/autorun"
 require "rack/test"
 require "committee"
-require "byebug"
 
 class AppTest < Minitest::Test
   include Rack::Test::Methods
@@ -27,7 +26,6 @@ class AppTest < Minitest::Test
 
   def test_schema
     get "/hello"
-    byebug
     assert_schema_conform
   end
 end
