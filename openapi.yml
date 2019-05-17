@@ -1,0 +1,22 @@
+openapi: 3.0.2
+components:
+  schemas:
+    Hello:
+      type: object
+      properties:
+        hello:
+          type: string
+      required:
+        - hello
+      additionalProperties: false
+      example:
+        hello: 'world'
+paths:
+  /hello:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hello'

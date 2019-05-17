@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    committee (3.0.2)
+      json_schema (~> 0.14, >= 0.14.3)
+      openapi_parser (>= 0.2.2)
+      rack (>= 1.5)
+    json (2.2.0)
+    json_schema (0.20.6)
+    minitest (5.11.3)
+    mustermann (1.0.3)
+    openapi_parser (0.2.5)
+    rack (2.0.7)
+    rack-protection (2.0.5)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
+    tilt (2.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  committee
+  json
+  minitest
+  rack-test
+  sinatra
+
+BUNDLED WITH
+   1.16.4
